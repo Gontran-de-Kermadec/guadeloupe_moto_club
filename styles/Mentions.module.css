@@ -1,0 +1,22 @@
+.mentions__section {
+	margin: 4rem 2rem;
+}
+.mentions__section > a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 1.2rem;
+	padding: 1rem;
+}
+.mentions__section h1 {
+	font-size: 3rem;
+	margin: 2rem 0;
+}
+.mentions__section h2 {
+	margin: 1rem 0;
+}
+@media (min-width: 1024px) {
+	.mentions__section {
+		margin: 4rem;
+	}
+}

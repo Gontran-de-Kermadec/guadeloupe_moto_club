@@ -1,0 +1,86 @@
+.contact__section {
+	position: relative;
+	padding: 0 1rem 2rem 1rem;
+}
+.contact__section::after {
+	content: "";
+	position: absolute;
+	background: url("../public/images/contact.jpg");
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	background-size: cover;
+	background-position: center;
+}
+.control {
+	margin: 0.5rem auto;
+}
+.control input,
+.control textarea {
+	width: 100%;
+	border-radius: 0.2rem;
+	font-size: 1.1rem;
+	border: solid 1px;
+	padding: 5px;
+	background: #fff;
+}
+.form__fullname {
+	display: flex;
+	justify-content: space-between;
+}
+.form__fullname .control {
+	margin: 0.5rem 0;
+	width: 49%;
+}
+.contact__messagesent,
+.contact__messageunsent {
+	width: 80vw;
+	margin: 0.5rem auto;
+}
+.contact__invalid,
+.contact__messageunsent,
+.contact__messagesent {
+	color: #fff;
+	border-radius: 0.2rem;
+	padding: 0.5rem;
+}
+.contact__messageunsent,
+.contact__invalid {
+	background: #b31919;
+}
+.contact__messagesent {
+	background: #034f22;
+}
+.contact__messageunsent a {
+	color: #fff;
+}
+#send {
+	background: #585757;
+}
+@media (min-width: 600px) {
+	.contact__form {
+		width: 70vw;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 1024px) {
+	.contact__section {
+		min-height: 61vh;
+	}
+	.contact__form {
+		width: 45vw;
+		margin-left: 3rem;
+	}
+	.control input,
+	.control textarea {
+		font-size: 1.4rem;
+	}
+}
+@media (min-width: 1200px) {
+	.contact__form {
+		width: 40vw;
+	}
+}

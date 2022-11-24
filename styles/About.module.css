@@ -1,0 +1,131 @@
+.about__section {
+	position: relative;
+	padding: 0 0.5rem;
+	line-height: 1.5em;
+}
+.about__section::after {
+	content: "";
+	position: absolute;
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-image: url("../public/images/about_us.jpg");
+	z-index: -1;
+	background-size: cover;
+}
+/* .about__section h1 {
+	padding: 2rem 0;
+} */
+.about__section > p,
+.about__section > div {
+	padding: 1rem 0;
+}
+.about__section > div > div {
+	margin: 2rem 0;
+}
+.about__section > div > ul {
+	text-align: left;
+}
+.about__values {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 0.5rem 0;
+}
+.about__section > div:nth-child(5) > div:nth-child(1) > p {
+	font-style: oblique;
+}
+.about__values > p {
+	margin: 0 1rem;
+	color: #ab0909;
+	font-size: 1.2rem;
+}
+/*medium screen section*/
+@media (min-width: 425px) {
+	.about__section {
+		padding: 0 2rem;
+	}
+}
+/*large screen section*/
+@media (min-width: 768px) {
+	.about__section > p,
+	.about__section > div {
+		text-align: left;
+	}
+	.about__triangle {
+		position: absolute;
+		left: 0;
+		border-top: 0px solid transparent;
+		border-bottom: 120px solid transparent;
+		border-right: 100vw solid #000;
+	}
+	.about__section h1 {
+		position: absolute;
+		top: 1rem;
+		left: 54vw;
+		width: 36vw;
+		padding-right: 0;
+		font-size: 1.8rem;
+		color: #fff;
+	}
+	.about__section > .about__triangle > h1 > span {
+		position: relative;
+	}
+	.about__section > .about__triangle > h1 > span > p {
+		display: inline-block;
+		position: absolute;
+		top: 1.6rem;
+		font-size: 6rem;
+		margin-left: 2rem;
+	}
+	.about__section > p:nth-child(2) {
+		padding-top: 10rem;
+	}
+	.about__section > div:nth-child(5) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.about__section div > div:has(.about__values) {
+		position: relative;
+		width: 70%;
+		color: grey;
+	}
+	.about__section .about__values {
+		position: absolute;
+		bottom: 0;
+	}
+	.about__section > div:nth-child(5) > div:nth-child(1) > p {
+		text-align: center;
+		/* font-size: 1.2rem; */
+	}
+	.about__section .about__office {
+		transform: translateX(20px);
+	}
+}
+@media (min-width: 1024px) {
+	.about__section h1 {
+		left: 56vw;
+	}
+	.about__section > div:nth-child(5) {
+		justify-content: flex-start;
+	}
+	.about__section > div:nth-child(5) > div:nth-child(1) > p {
+		text-align: left;
+		font-size: 1.2rem;
+	}
+	.about__values > p {
+		font-size: 1.6rem;
+	}
+}
+@media (min-width: 1200px) {
+	.about__triangle {
+		position: absolute;
+		left: -1px;
+		border-top: 0px solid transparent;
+		border-bottom: 120px solid transparent;
+		border-right: 98.95vw solid #000;
+	}
+}

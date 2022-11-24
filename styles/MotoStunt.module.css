@@ -1,0 +1,144 @@
+.svg__moto {
+	position: absolute;
+	fill: #fff;
+}
+.stunt__one {
+	top: 70%;
+	left: 55%;
+	width: 5em;
+}
+.stunt__two {
+	top: 50%;
+	left: 70%;
+	width: 6em;
+}
+.stunt__three {
+	top: 95%;
+	left: 5%;
+	width: 2em;
+}
+.stunt__four {
+	top: 21%;
+	left: 50%;
+	width: 7em;
+}
+.stunt__five {
+	left: 5%;
+	width: 8rem;
+}
+.stunt__six {
+	top: 85%;
+	left: 25%;
+	width: 4em;
+}
+@media (min-width: 500px) {
+	.stunt__one {
+		top: 50%;
+		left: 70%;
+		width: 15em;
+		transform: scale(0);
+		animation: stunt_two 1s 2.5s linear forwards;
+	}
+	.stunt__two {
+		top: 0%;
+		left: 65%;
+		width: 13em;
+		transform: scale(0);
+		animation: stunt_five 1s 2s linear forwards;
+	}
+	.stunt__three {
+		top: 70%;
+		left: 100%;
+		width: 7em;
+		animation: stunt_three 1s linear forwards;
+	}
+	.stunt__four {
+		top: 5%;
+		left: 25%;
+		width: 11em;
+		opacity: 0;
+		animation: stunt_one 2s 1.5s ease-out forwards;
+	}
+	.stunt__five {
+		top: 27%;
+		width: 9rem;
+		opacity: 0;
+		animation: stunt_four 2s 1s linear forwards;
+	}
+	.stunt__six {
+		left: 45%;
+		width: 5em;
+		animation: stunt 0.5s ease-in-out;
+	}
+}
+@media (min-width: 1024px) {
+	.stunt__one {
+		left: 77%;
+	}
+	.stunt__two {
+		left: 62%;
+	}
+	.stunt__six {
+		left: 48%;
+	}
+}
+
+@keyframes stunt {
+	0% {
+		top: 100%;
+	}
+	70% {
+		top: 83%;
+	}
+	100% {
+		top: 85%;
+	}
+}
+@keyframes stunt_one {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes stunt_two {
+	0% {
+		transform: scale(0);
+	}
+	95% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes stunt_three {
+	0% {
+		left: 100%;
+		transform: scale(0);
+	}
+	100% {
+		left: 18%;
+		transform: scale(1);
+	}
+}
+@keyframes stunt_four {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes stunt_five {
+	0% {
+		transform: scale(0);
+	}
+	95% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

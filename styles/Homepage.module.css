@@ -1,0 +1,60 @@
+.homepage__section {
+	background-color: #000;
+}
+.homepage__section h1 {
+	color: #fff;
+}
+.homepage__section > div:nth-child(1) > span {
+	height: 10em;
+}
+/* .homepage__partners {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 1rem 0;
+	background-color: #ada8a8;
+} */
+
+.homepage__section > div > div:nth-child(2) > div:nth-child(2) {
+	width: 70vw;
+	margin: 0 auto;
+}
+.homepage__section > div > div:nth-child(2) > div:nth-child(3) {
+	padding: 1rem 0;
+	background-color: #ada8a8;
+}
+.homepage__section
+	> div
+	> div:nth-child(2)
+	> div:nth-child(3)
+	> p:nth-child(1) {
+	letter-spacing: -0.05rem;
+	font-size: 0.8rem;
+}
+.homepage__section
+	> div
+	> div:nth-child(2)
+	> div:nth-child(3)
+	> p:nth-child(2) {
+	font-weight: bold;
+	font-size: 1.5rem;
+	line-height: 1.3rem;
+}
+@media (max-width: 767px) {
+	.homepage__section {
+		padding: 2.3rem 0;
+	}
+}
+@media (min-width: 768px) {
+	.homepage__section > div > div:nth-child(2) > div:nth-child(2) {
+		width: 50vw;
+	}
+	.homepage__section h1 {
+		text-align: center;
+		padding-right: 0;
+	}
+}
+@media (min-width: 1024px) {
+	.homepage__section > div > div:nth-child(2) > div:nth-child(2) {
+		width: 40vw;
+	}
+}

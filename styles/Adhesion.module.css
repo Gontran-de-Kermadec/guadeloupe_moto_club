@@ -1,0 +1,65 @@
+.adhesion__section > div > p:nth-child(2) {
+	font-weight: 900;
+	margin: 1rem 0;
+}
+.adhesion__section > div > p:nth-child(3) > span {
+	font-weight: 100;
+}
+.adhesion__section > div > div {
+	padding: 2rem 0;
+}
+.adhesion__ffm__container {
+	width: 40vw;
+	margin: 0 auto;
+}
+.adhesion__img__container {
+	display: none;
+}
+.adhesion__section > div:nth-child(2) > div > a {
+	border: solid 1px;
+	padding: 0.4em;
+	margin: 1em auto;
+	display: block;
+	width: 30vw;
+	border-radius: 2em;
+}
+@media (min-width: 600px) {
+	.adhesion__ffm__container {
+		width: 30vw;
+	}
+	.adhesion__section > div:nth-child(2) > div > a {
+		width: 20vw;
+	}
+}
+@media (min-width: 768px) {
+	.adhesion__section {
+		position: relative;
+		min-height: 62vh;
+	}
+	.adhesion__section > div:nth-child(2) {
+		width: 50vw;
+	}
+	.adhesion__img__container {
+		display: block;
+		position: absolute;
+		width: 40vw;
+		right: 0;
+		top: 57%;
+		transform: translateY(-50%);
+		z-index: -10;
+	}
+	.adhesion__section > div:nth-child(2) > div > a {
+		width: 15vw;
+	}
+}
+@media (min-width: 1024px) {
+	.adhesion__section {
+		min-height: 67vh;
+	}
+	.adhesion__ffm__container {
+		width: 20vw;
+	}
+	.adhesion__section > div:nth-child(2) > div > a {
+		width: 10vw;
+	}
+}

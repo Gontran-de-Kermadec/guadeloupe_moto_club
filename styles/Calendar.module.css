@@ -1,0 +1,83 @@
+.calendar__section {
+	position: relative;
+	padding: 0 1rem;
+}
+.calendar__section::after {
+	content: "";
+	position: absolute;
+	background: url("../public/images/calendrier.JPG");
+	opacity: 0.3;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	background-size: cover;
+	background-position: center;
+}
+/* .calendar__section h1 {
+	padding: 2rem 0;
+} */
+.calendar__section ul {
+	padding: 2rem 0;
+	font-size: 1.2rem;
+	font-weight: bolder;
+	line-height: 1.5em;
+}
+/*large screen section*/
+@media (min-width: 768px) {
+	.calendar__section {
+		min-height: 62vh;
+		padding: 0 5rem;
+	}
+	.calendar__triangle {
+		position: absolute;
+		left: 0;
+		border-top: 0px solid transparent;
+		border-bottom: 120px solid transparent;
+		border-right: 100vw solid #000;
+	}
+	.calendar__section h1 {
+		position: absolute;
+		left: 60vw;
+		color: #fff;
+		width: 37vw;
+		padding-right: 0;
+		font-size: 1.8rem;
+	}
+	.calendar__section > p {
+		font-size: 1.3rem;
+		text-align: left;
+		padding-top: 10rem;
+	}
+	.calendar__section ul {
+		text-align: left;
+		width: 50vw;
+	}
+}
+@media (min-width: 1024px) {
+	.calendar__section {
+		min-height: 67vh;
+	}
+	.calendar__section > p {
+		width: 50vw;
+	}
+}
+@media (min-width: 1200px) {
+	.calendar__triangle {
+		position: absolute;
+		left: -1px;
+		border-top: 0px solid transparent;
+		border-bottom: 120px solid transparent;
+		border-right: 98.95vw solid #000;
+	}
+}
+/* @media (min-width: 1400px) {
+	.calendar__triangle {
+		position: absolute;
+		left: 0;
+		border-top: 0px solid transparent;
+		border-bottom: 120px solid transparent;
+		border-right: 100vw solid #000;
+	}
+} */

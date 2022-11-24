@@ -1,0 +1,148 @@
+.inscription__section > div {
+	overflow: hidden;
+}
+.test {
+	color: red;
+}
+.inscription__section .affiche__container {
+	margin: 0 auto;
+	width: 60vw;
+}
+.inscription__section .modal__hidden {
+	display: none;
+}
+.inscription__section .inscription__course {
+	margin: 2.5rem 2rem;
+}
+.inscription__section .inscription__img__container {
+	width: 30vw;
+	margin: 0 auto;
+}
+.inscription__section .sponsor__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem 0;
+}
+.inscription__section .sponsor__container .sponsor__planet {
+	width: 30vw;
+}
+.inscription__section .sponsor__container .sponsor__dalciat {
+	width: 40vw;
+}
+.inscription__section .inscription__img__people {
+	position: relative;
+	overflow: hidden;
+	height: 25vh;
+}
+/* .inscription__section > div > div:nth-child(3) > a { */
+.inscription__section .inscription__link {
+	border: solid 1px;
+	padding: 0.4em;
+	margin: 2em auto;
+	display: block;
+	width: 30vw;
+	border-radius: 2em;
+}
+/* .inscription__section > div > div:nth-child(4) > span > img { */
+.inscription__section .inscription__img__people > span > img {
+	transform: translateY(-15%);
+}
+@media (min-width: 550px) {
+	.inscription__section .inscription__affiche__flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.inscription__section .affiche__container,
+	.inscription__section .inscription__course {
+		width: 30%;
+		margin: 1rem;
+	}
+	.inscription__section .inscription__img__container {
+		width: initial;
+	}
+	.inscription__section .sponsor__container .sponsor__planet {
+		width: 15vw;
+	}
+	.inscription__section .sponsor__container .sponsor__dalciat {
+		width: 25vw;
+	}
+	.inscription__section .inscription__img__people > span > img {
+		transform: translateY(-35%);
+	}
+}
+@media (min-width: 768px) {
+	.inscription__section .affiche__modal {
+		/* display: block; */
+		/* position: fixed;
+		z-index: 1000;
+		background: gray;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0; */
+		position: fixed;
+		width: fit-content;
+		margin: 1rem auto;
+		border: none;
+	}
+	.inscription__section .affiche__modal > div {
+		width: 50vw;
+		/* pointer-events: none; */
+	}
+	.inscription__section .affiche__modal::backdrop {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	/* .inscription__section .modal__visible {
+		display: block;
+	} */
+	/* .inscription__section .affiche__modal > div {
+		width: 28rem;
+		margin: 1rem auto;
+	} */
+	.inscription__section .affiche__container {
+		cursor: pointer;
+	}
+	.inscription__section .inscription__link {
+		width: 20vw;
+	}
+	.inscription__section .inscription__img__people {
+		height: 30vh;
+	}
+	.inscription__section .inscription__link {
+		width: 15vw;
+	}
+	.inscription__section .inscription__img__people > span > img {
+		transform: translateY(-40%);
+	}
+}
+@media (min-width: 1024px) {
+	.inscription__section .affiche__modal > div {
+		width: 42vw;
+	}
+	.inscription__section .affiche__container,
+	.inscription__section .inscription__course {
+		width: 25%;
+	}
+	.inscription__section .inscription__img__people {
+		height: 30vh;
+	}
+	.inscription__section .inscription__link {
+		width: 10vw;
+	}
+	.inscription__section .sponsor__container .sponsor__planet {
+		width: 10vw;
+	}
+	.inscription__section .sponsor__container .sponsor__dalciat {
+		width: 15vw;
+	}
+	.inscription__section .inscription__img__people > span > img {
+		transform: translateY(-40%);
+	}
+}
+@media (min-width: 1200px) {
+	.inscription__section .affiche__modal > div {
+		width: 30rem;
+	}
+}
