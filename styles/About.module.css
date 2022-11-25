@@ -99,13 +99,16 @@
 	}
 	.about__section > div:nth-child(5) > div:nth-child(1) > p {
 		text-align: center;
-		/* font-size: 1.2rem; */
 	}
 	.about__section .about__office {
 		transform: translateX(20px);
 	}
 }
 @media (min-width: 1024px) {
+	.about__section {
+		min-height: 70vh;
+		overflow: hidden;
+	}
 	.about__section h1 {
 		left: 56vw;
 	}
@@ -123,9 +126,14 @@
 @media (min-width: 1200px) {
 	.about__triangle {
 		position: absolute;
-		left: -1px;
+		left: 0px;
 		border-top: 0px solid transparent;
 		border-bottom: 120px solid transparent;
-		border-right: 98.95vw solid #000;
+		border-right: 100vw solid #000;
+	}
+}
+@media (min-width: 1400px) {
+	.about__section {
+		font-size: 1.3rem;
 	}
 }

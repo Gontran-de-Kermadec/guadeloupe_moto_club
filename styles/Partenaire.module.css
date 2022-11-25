@@ -1,9 +1,3 @@
-/* .buttons__container {
-	padding: 0.5rem 1rem;
-	background: grey;
-	margin: 0 auto;
-	width: 60vw;
-} */
 .partenaire__section {
 	text-align: center;
 	margin: 0 0.5rem;
@@ -47,7 +41,15 @@
 	}
 }
 @media (min-width: 1024px) {
+	.partenaire__section {
+		min-height: 70vh;
+	}
 	.support {
 		width: 30vw;
+	}
+}
+@media (min-width: 1400px) {
+	.partenaire__section {
+		font-size: 1.3rem;
 	}
 }

@@ -29,6 +29,7 @@
 	.calendar__section {
 		min-height: 62vh;
 		padding: 0 5rem;
+		overflow: hidden;
 	}
 	.calendar__triangle {
 		position: absolute;
@@ -57,7 +58,7 @@
 }
 @media (min-width: 1024px) {
 	.calendar__section {
-		min-height: 67vh;
+		min-height: 70vh;
 	}
 	.calendar__section > p {
 		width: 50vw;
@@ -72,7 +73,10 @@
 		border-right: 98.95vw solid #000;
 	}
 }
-/* @media (min-width: 1400px) {
+@media (min-width: 1400px) {
+	.calendar__section {
+		font-size: 1.3rem;
+	}
 	.calendar__triangle {
 		position: absolute;
 		left: 0;
@@ -80,4 +84,4 @@
 		border-bottom: 120px solid transparent;
 		border-right: 100vw solid #000;
 	}
-} */
+}

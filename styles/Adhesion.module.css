@@ -54,12 +54,17 @@
 }
 @media (min-width: 1024px) {
 	.adhesion__section {
-		min-height: 67vh;
+		min-height: 70vh;
 	}
 	.adhesion__ffm__container {
 		width: 20vw;
 	}
 	.adhesion__section > div:nth-child(2) > div > a {
 		width: 10vw;
+	}
+}
+@media (min-width: 1400px) {
+	.adhesion__section {
+		font-size: 1.3rem;
 	}
 }
