@@ -11,7 +11,7 @@ const MotoStuntFive = () => {
 				x="0px"
 				y="0px"
 				viewBox="0 0 1189.999 1660.439"
-				enable-background="new 0 0 1189.999 1660.439"
+				enableBackground="new 0 0 1189.999 1660.439"
 				xmlSpace="preserve"
 				className={motoStyle.svg__moto + " " + motoStyle.stunt__five}
 			>

@@ -1,5 +1,5 @@
 import type { NextPageWithLayout } from "./_app";
-import { ReactElement, useRef } from "react";
+import { ReactElement, useRef, useEffect } from "react";
 import Layout from "../components/layout";
 import inscriptionStyle from "../styles/Inscription.module.css";
 import FocusMoto from "../public/images/focus.jpg";
@@ -10,19 +10,21 @@ import Dalciat from "../public/images/dalciat.png";
 import Image from "next/image";
 
 const Inscription: NextPageWithLayout = () => {
-	let modal: any;
-	if (typeof window !== "undefined") {
-		modal = document.querySelector(`.${inscriptionStyle.affiche__modal}`);
-	}
 	const modalRef = useRef<HTMLDialogElement>(null);
+	let modal: any;
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			// eslint-disable-next-line react-hooks/exhaustive-deps
+			modal = document.querySelector(`.${inscriptionStyle.affiche__modal}`);
+		}
+	});
 	const openModal = (e: any) => {
-		console.log(e.currentTarget);
-		modal.showModal();
+		modal?.showModal();
 	};
 	const closeModal = (e: any) => {
 		if (e.target === modalRef.current) {
 			//console.log("ferme modal");
-			modal.close();
+			modal?.close();
 		}
 	};
 	return (
@@ -68,25 +70,51 @@ const Inscription: NextPageWithLayout = () => {
 						</p>
 						<p>18 Décembre 2022</p>
 						<div className={inscriptionStyle.inscription__img__container}>
-							<Image src={FocusMoto} alt="logo"></Image>
+							<div className={inscriptionStyle.sponsor__container}>
+								<div className={inscriptionStyle.sponsor__planet}>
+									<Image src={PlanetScooter} alt="Logo Planet Scooter"></Image>
+								</div>
+								<div className={inscriptionStyle.sponsor__dalciat}>
+									<Image src={Dalciat} alt="Logo Ferme Dalciat"></Image>
+								</div>
+							</div>
 							<a
 								href="https://my.weezevent.com/grande-finale-planet-scooter-la-ferme-de-dalciat"
 								target="_blank"
 								rel="noreferer noreferrer"
 								className={inscriptionStyle.inscription__link}
 							>
-								Cliquez
+								Inscription
 							</a>
 						</div>
 					</div>
 				</div>
-				<div className={inscriptionStyle.sponsor__container}>
+				{/* <div className={inscriptionStyle.sponsor__container}>
 					<div className={inscriptionStyle.sponsor__planet}>
 						<Image src={PlanetScooter} alt="Logo Planet Scooter"></Image>
 					</div>
 					<div className={inscriptionStyle.sponsor__dalciat}>
 						<Image src={Dalciat} alt="Logo Ferme Dalciat"></Image>
 					</div>
+				</div> */}
+				<div className={inscriptionStyle.inscription__tombola}>
+					<p>
+						<strong>Entrées en ligne</strong>
+					</p>
+					<p>
+						<strong>Ticket tombola</strong>
+					</p>
+					<p>
+						<strong>Précommande plat</strong>
+					</p>
+					<a
+						href="https://guadeloupe-moto-club.sumupstore.com/"
+						target="_blank"
+						rel="noreferer noreferrer"
+						className={inscriptionStyle.inscription__link}
+					>
+						Cliquez
+					</a>
 				</div>
 				<div className={inscriptionStyle.inscription__img__people}>
 					<Image

@@ -30,6 +30,7 @@
 	border-radius: 2em;
 	display: block;
 	width: 30vw;
+	cursor: pointer;
 }
 
 @media (min-width: 500px) {
