@@ -13,8 +13,8 @@ const Rule: NextPageWithLayout = () => {
 					<h2>MESURES POUR LE BON DÉROULEMENT DE L&apos;ÉVÈNEMENT</h2>
 					<a
 						className={reglementStyle.reglement__link}
-						href="files/mesures_evenement.pdf"
-						download="files/mesures_evenement.pdf"
+						href="/files/mesures_evenement.pdf"
+						download="/files/mesures_evenement.pdf"
 					>
 						Download
 					</a>
@@ -23,8 +23,8 @@ const Rule: NextPageWithLayout = () => {
 					<h2>RÈGLEMENT CHAMPIONNAT</h2>
 					<a
 						className={reglementStyle.reglement__link}
-						href="files/reglement.pdf"
-						download="files/reglement.pdf"
+						href="/files/reglement.pdf"
+						download="/files/reglement.pdf"
 					>
 						Download
 					</a>
@@ -33,15 +33,13 @@ const Rule: NextPageWithLayout = () => {
 					<h2>HORAIRES</h2>
 					<a
 						className={reglementStyle.reglement__link}
-						href="files/horaires.docx"
-						download="files/horaires.docx"
+						href="/files/horaires.docx"
+						download="/files/horaires.docx"
 					>
 						Download
 					</a>
 				</div>
 			</div>
-			{/* <p>HORAIRES COURSES</p> */}
-			{/* <button>Download</button> */}
 		</div>
 	);
 };
