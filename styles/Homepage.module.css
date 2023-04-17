@@ -22,16 +22,12 @@
 }
 .homepage__section .homepage__aside {
 	animation: popup 2s ease-in-out alternate infinite;
-	top: 1rem;
+	top: 25rem;
 	background-color: rgba(251, 201, 26, 1);
 }
 .homepage__section .homepage__aside__tombola {
 	position: absolute;
 	top: 4rem;
-	/* left: 1rem; */
-	/* padding: 0.5rem;
-	border: solid 1px; */
-	/* border-radius: 0.5rem; */
 	background-color: #000;
 	color: rgb(251, 201, 26);
 	animation: popup 2s 2s ease-in-out alternate infinite;
@@ -79,6 +75,9 @@
 @media (min-width: 1024px) {
 	.homepage__section > div > div:nth-child(2) > div:nth-child(2) {
 		width: 40vw;
+	}
+	.homepage__section .homepage__aside {
+		top: 18rem;
 	}
 }
 @keyframes popup {

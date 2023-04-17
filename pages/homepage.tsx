@@ -6,7 +6,7 @@ import Logo from "../public/images/gmc_logo.png";
 import Monster from "../public/images/monster_logo.png";
 import Mxgp from "../public/images/mxgp_logo.png";
 import Ffm from "../public/images/ffm_logo.png";
-import homepagePic from "../public/images/homepage.jpg";
+import homepagePic from "../public/images/homepage_2304.jpg";
 import homepageStyle from "../styles/Homepage.module.css";
 import Link from "next/link";
 
@@ -19,16 +19,16 @@ const Homepage: NextPageWithLayout = () => {
 			<div>
 				<h1>Bienvenue au Guadeloupe Moto Club</h1>
 			</div>
-			<aside className={homepageStyle.homepage__aside}>
+			{/* <aside className={homepageStyle.homepage__aside}>
 				<Link href="/inscription">
 					<a>INSCRIPTION COURSE</a>
 				</Link>
-			</aside>
-			<aside className={homepageStyle.homepage__aside__tombola}>
+			</aside> */}
+			{/* <aside className={homepageStyle.homepage__aside__tombola}>
 				<Link href="/tombola">
 					<a>TOMBOLA</a>
 				</Link>
-			</aside>
+			</aside> */}
 		</div>
 	);
 };
