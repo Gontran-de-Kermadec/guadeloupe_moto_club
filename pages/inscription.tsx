@@ -5,7 +5,7 @@ import inscriptionStyle from "../styles/Inscription.module.css";
 import FocusMoto from "../public/images/focus.jpg";
 import Course from "../public/images/inscription_course.jpg";
 // import Affiche from "../public/images/affiche_finale.jpg";
-import Affiche from "../public/images/affiche_course_2304.jpg";
+import Affiche from "../public/images/2eme_manche_moto.jpg";
 // import PlanetScooter from "../public/images/planet__scooter.jpg";
 import LogoGmc from "../public/images/gmc-logo.png";
 // import Dalciat from "../public/images/dalciat.png";
@@ -66,9 +66,9 @@ const Inscription: NextPageWithLayout = () => {
 					</div>
 					<div className={inscriptionStyle.inscription__course}>
 						<p>
-							<strong>1ÈRE MANCHE MX</strong>
+							<strong>2Ème MANCHE MX</strong>
 						</p>
-						<p>23 Avril 2023</p>
+						<p>18 Juin 2023</p>
 						<div className={inscriptionStyle.inscription__img__container}>
 							<div className={inscriptionStyle.sponsor__container}>
 								<Image src={LogoGmc} alt="Logo GMC"></Image>
@@ -80,8 +80,8 @@ const Inscription: NextPageWithLayout = () => {
 								</div> */}
 							</div>
 							<a
-								// href="https://my.weezevent.com/grande-finale-planet-scooter-la-ferme-de-dalciat"
-								href="https://my.weezevent.com/grand-prix-1ere-manche-MX"
+								href="https://my.weezevent.com/grand-prix-ferme-de-dalciat"
+								// href="https://my.weezevent.com/grand-prix-1ere-manche-MX"
 								target="_blank"
 								rel="noreferer noreferrer"
 								className={inscriptionStyle.inscription__link}

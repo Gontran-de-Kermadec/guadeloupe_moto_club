@@ -2,6 +2,7 @@ import { ReactElement } from "react";
 import Layout from "../components/layout";
 import type { NextPageWithLayout } from "./_app";
 import calendarStyle from "../styles/Calendar.module.css";
+import reglementStyle from "../styles/Reglement.module.css";
 
 const Calendrier: NextPageWithLayout = () => {
 	return (
@@ -12,7 +13,6 @@ const Calendrier: NextPageWithLayout = () => {
 			<p>
 				Le calendrier 2023 est composé des 6 courses du championnat de
 				Guadeloupe.
-				{/* ainsi qu&apos;une épreuve d&apos;endurance. */}
 			</p>
 			<ul>
 				<li>- 23 AVRIL</li>
@@ -23,6 +23,16 @@ const Calendrier: NextPageWithLayout = () => {
 				<li>- 19 NOVEMBRE</li>
 				<li>- 17 DÉCEMBRE</li>
 			</ul>
+			<div className={calendarStyle.results__container}>
+				<h2>Résultats et classement</h2>
+				<a
+					className={reglementStyle.reglement__link}
+					href="/files/classement_course_moto.pdf"
+					download="/files/classement_course_moto.pdf"
+				>
+					Download
+				</a>
+			</div>
 		</div>
 	);
 };

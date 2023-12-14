@@ -15,14 +15,14 @@
 	background-size: cover;
 	background-position: center;
 }
-/* .calendar__section h1 {
-	padding: 2rem 0;
-} */
 .calendar__section ul {
 	padding: 2rem 0;
 	font-size: 1.2rem;
 	font-weight: bolder;
 	line-height: 1.5em;
+}
+.results__container {
+	margin: 2em 0;
 }
 /*large screen section*/
 @media (min-width: 768px) {

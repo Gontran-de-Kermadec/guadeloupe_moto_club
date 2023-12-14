@@ -7,6 +7,7 @@ import Monster from "../public/images/monster_logo.png";
 import Mxgp from "../public/images/mxgp_logo.png";
 import Ffm from "../public/images/ffm_logo.png";
 import homepagePic from "../public/images/homepage_2304.jpg";
+// import homepageVIdeo from "../public/videos/2eme_manche_moto.mp4";
 import homepageStyle from "../styles/Homepage.module.css";
 import Link from "next/link";
 
@@ -14,7 +15,10 @@ const Homepage: NextPageWithLayout = () => {
 	return (
 		<div className={homepageStyle.homepage__section}>
 			<div>
-				<Image src={homepagePic} alt="" />
+				{/* <Image src={homepagePic} alt="" /> */}
+				<video controls autoPlay loop>
+					<source src="/videos/2eme_manche_moto.mp4" type="video/mp4" />
+				</video>
 			</div>
 			<div>
 				<h1>Bienvenue au Guadeloupe Moto Club</h1>
