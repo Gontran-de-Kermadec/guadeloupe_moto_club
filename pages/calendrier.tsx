@@ -32,6 +32,30 @@ const Calendrier: NextPageWithLayout = () => {
 				>
 					Download
 				</a>
+				<h3>Manche 4</h3>
+				<a
+					className={reglementStyle.reglement__link}
+					href="/files/manche4.pdf"
+					download="/files/manche4.pdf"
+				>
+					Download
+				</a>
+				<h3>Manche 5</h3>
+				<a
+					className={reglementStyle.reglement__link}
+					href="/files/manche5.pdf"
+					download="/files/manche5.pdf"
+				>
+					Download
+				</a>
+				<h3>Championnat MX</h3>
+				<a
+					className={reglementStyle.reglement__link}
+					href="/files/classementMX.pdf"
+					download="/files/classementMX.pdf"
+				>
+					Download
+				</a>
 			</div>
 		</div>
 	);
